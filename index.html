@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forever Is Now - Bodas en la Playa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">Forever Is Now</h1>
+      <div class="menu-toggle" onclick="toggleMenu()"> <!-- Botón de menú hamburguesa -->
+        &#9776;
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+
+
+<!-- Sección de Inicio -->
+<section id="inicio" class="inicio">
+    <div class="container">
+      <h1>Forever Is Now</h1>
+      <h2>Bodas en la playa hechas a tu medida</h2>
+  <p>Hacemos realidad el día más importante de tu vida en escenarios paradisíacos, con los mejores hoteles del Caribe y el Pacífico.</p>
+  <p>Nos encargamos de todo: planeación, coordinación, decoración y más.</p>
+      <a href="#contacto" class="boton-accion">¡Planifica tu boda de ensueño!</a>
+    </div>
+  </section>
+
+  
+<!-- Seccion de Servicios-->
+<section class="servicios" id="servicios">
+  <div class="container">
+    <h2>Nuestros Servicios</h2>
+    <p>Ofrecemos soluciones integrales para bodas en la playa, cuidando cada detalle de principio a fin.</p>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <img src="imagenes/wedding.png" alt="Planeación Total">
+        <h3>Planeación Total</h3>
+        <p>Desde el concepto hasta el último brindis. Nos encargamos de todo para que tú solo disfrutes.</p>
+      </div>
+      <div class="servicio">
+        <img src="imagenes/chair.png" alt="Decoración y Estilo">
+        <h3>Decoración y Estilo</h3>
+        <p>Diseños personalizados con inspiración tropical y elegante, adaptados a tus sueños.</p>
+      </div>
+      <div class="servicio">
+        <img src="imagenes/wedding-cost.png" alt="Coordinación en el Evento">
+        <h3>Coordinación en el Evento</h3>
+        <p>Un equipo experto asegurando que todo fluya perfecto el día más importante de tu vida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+ <!-- Seccion de Nosotros -->
+ <section id="nosotros" class="nosotros">
+  <div class="container">
+    <h2>Sobre Nosotros</h2>
+    <p>En <strong>Forever Is Now</strong> creamos bodas inolvidables frente al mar. Nuestro equipo combina pasión y experiencia para hacer realidad la ceremonia de tus sueños.</p>
+
+    <div class="galeria-nosotros">
+      <img src="imagenes/equipoforever.jpeg" alt="Equipo Forever Is Now">
+      <img src="imagenes/equipo1.jpg" alt="Organizando una boda">
+      <img src="imagenes/equipo2.jpg" alt="Decoración de boda">
+      <img src="imagenes/equipo5.jpg" alt="Montaje en playa">
+      <img src="imagenes/equipo4.jpg" alt="Decoración de boda">
+      <img src="imagenes/equipo3.jpg" alt="Montaje en playa">
+    </div>
+  </div>
+</section>
+
+
+ <!-- Seccion de Galeria -->
+
+ <section id="galeria" class="galeria">
+  <div class="container">
+    <h2>Galería de Bodas</h2>
+    <p>Descubre algunos de los momentos más hermosos que hemos creado para nuestros clientes en las playas más románticas.</p>
+
+    <div class="galeria-grid">
+      <img src="imagenes/bodaenplaya1.webp" alt="Boda en la playa" loading="lazy" >
+      <img src="imagenes/bodaenplaya2.webp" alt="Novios en ceremonia" loading="lazy">
+      <img src="imagenes/bodaenplaya3.webp" alt="Montaje de altar"  loading="lazy">
+      <img src="imagenes/bodaenplaya4.webp" alt="Decoración romántica"  loading="lazy" >
+
+      <button id="ver-mas" class="btn-ver-mas">Ver más</button>
+
+
+      <img src="imagenes/bodaenplaya6.webp" alt="Recepción junto al mar" class="oculta" loading="lazy" >
+      <img src="imagenes/bodaenplaya7.webp" alt="Baile de novios" class="oculta" loading="lazy" >
+      <img src="imagenes/bodaenplaya8.webp" alt="Baile de novios" class="oculta" loading="lazy" >
+      <img src="imagenes/bodaenplaya9.webp" alt="Montaje de altar"  class="oculta" loading="lazy">
+      <img src="imagenes/bodaenplaya10.webp" alt="Decoración romántica" class="oculta" loading="lazy">
+      <img src="imagenes/bodaenplaya11.webp" alt="Recepción junto al mar" class="oculta" loading="lazy" >
+      <img src="imagenes/bodaenplaya12.webp" alt="Baile de novios" class="oculta" loading="lazy">
+    </div>
+  </div>
+</section>
+
+
+<!-- Seccion de Preguntas Frecuentes-->   
+
+<section id="faq" class="faq">
+  <div class="container">
+    <h2>Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+      <h3>¿Con cuánta anticipación debo reservar mi boda?</h3>
+      <p>Recomendamos al menos 6 meses de anticipación para asegurar disponibilidad de fechas y hoteles.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>¿Qué incluye el servicio de bodas?</h3>
+      <p>Incluye planeación, decoración, coordinación, gestión con el hotel, ceremonia, música, y más.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>¿Puedo personalizar la decoración?</h3>
+      <p>Sí, trabajamos contigo para crear una boda totalmente personalizada y acorde a tu estilo.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>¿Pueden ayudar con los invitados?</h3>
+      <p>Claro, también gestionamos hospedaje y logística para tus invitados si lo deseas.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Seccion de Contacto-->
+
+<section id="contacto" class="contacto">
+  <div class="container">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes alguna duda o deseas más información? Estamos aquí para ayudarte.</p>
+    
+    <div class="formulario-contacto">
+      <form action="https://formspree.io/f/mvgaggpd" method="post">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <input type="text" name="asunto" placeholder="Asunto (opcional)">
+        <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+      <div class="info-contacto">
+        <h3>Forever Is Now</h3>
+        <h6>Agencia de viajes</h6><br>
+        <p><strong>Dirección:</strong> Calle del Mar 123, Marbella, España</p>
+        <p><strong>Teléfono:</strong> +34 600 123 456</p>
+        <p><strong>Email:</strong> info@foreverisnow.com</p>
+        <p><strong>Instagram:</strong> @foreverisnowbodas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Script javascript para el boton de ver mas en galeria-->
+<script>
+  const boton = document.getElementById('ver-mas');
+  const imagenesOcultas = document.querySelectorAll('.galeria .oculta');
+
+  boton.addEventListener('click', () => {
+    imagenesOcultas.forEach((img, index) => {
+      setTimeout(() => {
+        img.classList.add('mostrar');
+      }, index * 100); // animación escalonada
+    });
+    boton.style.display = 'none';
+  });
+</script>
+
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+</script>
+
+
+ 
+
+</body>
+</html>
+
