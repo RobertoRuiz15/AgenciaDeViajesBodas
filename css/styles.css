@@ -72,7 +72,7 @@ html {
 .inicio {
     position: relative;
   height: 100vh; /* Toma toda la altura de la pantalla */
-  background-image: url('../imagenes/Hyatt-Ziva-Los-Cabos.jpeg');
+  background-image: url(../imagenes/Hyatt-Ziva-Los-Cabos.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
