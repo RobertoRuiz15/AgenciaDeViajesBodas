@@ -590,5 +590,50 @@ html {
 
 
 
-  
+
+
+/* =========================
+   Menú Hamburguesa boton para moviles
+   ========================= */
+
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #222;
+  cursor: pointer;
+  display: none;
+}
+
+/* Estilos en móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-navegacion {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .menu-navegacion.activo {
+    display: block;
+  }
+
+  .nav-lista {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-lista li {
+    text-align: center;
+  }
+}
+
   
