@@ -1,0 +1,19 @@
+# Archivos de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Archivos de sistema
+ehthumbs.db
+Thumbs.db
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de compilación o minificados que no quieras versionar
+*.log
+node_modules/
+dist/
