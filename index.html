@@ -21,6 +21,7 @@
         <li><a href="#" data-section="servicios">Servicios</a></li>
         <li><a href="#" data-section="nosotros">Nosotros</a></li>
         <li><a href="#" data-section="galeria">Galería</a></li>
+        <li><a href="#" data-section="paquetes">Paquetes de Bodas</a></li> <!-- NUEVA OPCIÓN -->
         <li><a href="#" data-section="contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -143,6 +144,39 @@
 </section>
 
 
+<!-- ...existing code... -->
+<section id="paquetes" class="paquetes-boda">
+  <div class="container">
+    <h2>Paquetes de Bodas</h2>
+    <p>Consulta nuestros paquetes actualizados de los hoteles. ¡Elige el que más se adapte a tu evento!</p>
+    <div class="paquete-lista">
+      <!-- Paquete 1: Bodas Gratis -->
+      <div class="paquete">
+        <h3>Bodas Gratis</h3>
+        <div class="descripcion-paquete">
+          <!-- Aquí va la descripción del paquete Bodas Gratis -->
+        </div>
+      </div>
+      <!-- Paquete 2: Bodas 50 personas -->
+      <div class="paquete">
+        <h3>Bodas 50 personas</h3>
+        <div class="descripcion-paquete">
+          <!-- Aquí va la descripción del paquete Bodas 50 personas -->
+        </div>
+      </div>
+      <!-- Paquete 3: Bodas 100 personas -->
+      <div class="paquete">
+        <h3>Bodas 100 personas</h3>
+        <div class="descripcion-paquete">
+          <!-- Aquí va la descripción del paquete Bodas 100 personas -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ...existing code... -->
+
+
 
 
 <!-- Seccion de Contacto-->
@@ -214,10 +248,13 @@
     document.querySelectorAll('section').forEach(sec => {
       sec.style.display = sec.id === id ? 'block' : 'none';
     });
+    // Guarda la última sección vista
+  localStorage.setItem('ultimaSeccion', id);
   }
 
-  // Inicialmente muestra "inicio"
-  mostrarSeccion('inicio');
+ // Al cargar la página, muestra la última sección vista o "inicio"
+const ultimaSeccion = localStorage.getItem('ultimaSeccion') || 'inicio';
+mostrarSeccion(ultimaSeccion);
 
   // Maneja los clics del menú
   document.querySelectorAll('.nav-links a').forEach(link => {
