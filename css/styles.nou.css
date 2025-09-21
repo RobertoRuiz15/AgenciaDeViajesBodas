@@ -1,0 +1,98 @@
+/* Menú hamburguesa y navegación responsive */
+
+/* --- Móvil --- */
+@media (max-width: 768px) {
+  /* Contenedor del menú: oculto por defecto, aparece como ventana al activar */
+  .menu-navegacion {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Flotante sobre la página */
+    top: 0; left: 0; right: 0;
+    background: #fff; /* Fondo blanco */
+    z-index: 1000; /* Encima de todo */
+    height: 100vh; /* Ocupa toda la altura */
+    flex-direction: column; /* Elementos en columna */
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Sombra suave */
+  }
+  /* Cuando el menú está activo (al hacer click en ☰) */
+  .menu-navegacion.activo {
+    display: flex; /* Se muestra como flex */
+  }
+  /* Botón de cierre (X) */
+  .menu-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  /* Lista de enlaces del menú */
+  .nav-links {
+    display: flex; /* Mostrar como columna */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333;
+    display: block;
+    padding: 0.5rem 0;
+  }
+  /* Botón hamburguesa visible solo en móvil */
+  .menu-toggle {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #222;
+    cursor: pointer;
+    display: block;
+    align-self: flex-end;
+    margin-right: 1rem;
+  }
+}
+
+/* --- Escritorio --- */
+@media (min-width: 768px) {
+  /* Menú siempre visible y horizontal */
+  .menu-navegacion {
+    display: flex !important;
+    position: static;
+    height: auto;
+    background: none;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: none;
+    padding: 0;
+  }
+  /* Botón de cierre oculto en escritorio */
+  .menu-close {
+    display: none;
+  }
+  /* Enlaces en fila */
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links li {
+    margin: 0;
+  }
+  .nav-links a {
+    font-size: 1rem;
+    padding: 0;
+    color: #fff; /* Puedes cambiar el color si lo prefieres */
+  }
+  /* Botón hamburguesa oculto en escritorio */
+  .menu-toggle {
+    display: none;
+  }
+}
