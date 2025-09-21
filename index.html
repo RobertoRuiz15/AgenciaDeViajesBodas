@@ -12,6 +12,8 @@
   <!-- Header -->
   <header class="navbar">
   <div class="navbar-container">
+    <!-- Logo como enlace -->
+  <a href="#" data-section="inicio" class="logo-link">
     <img src="imagenes/foreverisnowlogo.PNG" alt="Forever Is Now" class="logo" style="height:57px;">
     <!-- Botón hamburguesa -->
     <button class="menu-toggle" id="menu-toggle">☰</button>
@@ -275,6 +277,14 @@ mostrarSeccion(ultimaSeccion);
       window.scrollTo(0, 0);
     });
   });
+
+  // Click en el logo para ir a inicio
+document.querySelector('.logo-link').addEventListener('click', function(e) {
+  e.preventDefault();
+  mostrarSeccion('inicio');
+  window.scrollTo(0, 0);
+});
+
 </script>
 
  
