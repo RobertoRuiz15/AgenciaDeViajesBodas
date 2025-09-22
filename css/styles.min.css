@@ -101,20 +101,18 @@
     align-self: flex-end;
     cursor: pointer;
     margin-bottom: 1rem;
-    gap: 0.5rem;
   }
   /* Lista de enlaces del menú */
   .nav-links {
     display: flex; /* Mostrar como columna */
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.3rem;
     padding: 1rem 0;
     width: 100%;
   }
   .nav-links li {
-    margin: 1rem 0;
-    gap: 0.5rem;
+    margin: 0;
   }
   .nav-links a {
     text-decoration: none;
