@@ -86,7 +86,7 @@
     flex-direction: column; /* Elementos en columna */
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 1rem 1rem 1rem 1rem; /* Espaciado interno */
     box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Sombra suave */
   }
   /* Cuando el menú está activo (al hacer click en ☰) */
@@ -100,7 +100,7 @@
     font-size: 2rem;
     align-self: flex-end;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   /* Lista de enlaces del menú */
   .nav-links {
